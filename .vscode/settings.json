@@ -1,0 +1,9 @@
+{
+  "cSpell.words": [
+    "iovecs",
+    "preadv",
+    "pwritev",
+    "vecs"
+  ],
+  "rust-analyzer.showUnlinkedFileNotification": false
+}
