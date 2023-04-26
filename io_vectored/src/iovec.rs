@@ -77,12 +77,14 @@ impl<'a> IoVecs<'a> {
   }
 
   pub fn advance(&mut self, step: usize) {
-    let iovecs = match self.iovecs {
+    let iovecs = match &self.iovecs {
       IoVecsType::Immutable(iovecs) => {
-        IoVecsType::Immutable(crate::advance(step, iovecs))
+        todo!()
+        // IoVecsType::Immutable(crate::advance(step, iovecs))
       }
       IoVecsType::Mutable(iovecs) => {
-        IoVecsType::Mutable(crate::advance_mut(step, iovecs))
+        todo!()
+        // IoVecsType::Mutable(crate::advance_mut(step, iovecs))
       }
     };
     self.iovecs_cnt -= step;
